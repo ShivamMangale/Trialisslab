@@ -7,3 +7,8 @@ sed 's/[0-9][0-9][0-9][0-9] [0-9][0-9][0-9][0-9] [0-9][0-9]/#### #### ##/' card.
 - - - - -
 awk '{ sum =$1+$2+$3 ; sum=sum/3 ; if(sum>=80) print $1" "$2" "$3":A" ; else if(sum>=60) print $1" "$2" "$3":B"; else if(sum>=40) print $1" "$2" "$3":C"; else print $1" "$2" "$3":F"; } END { ; }' marks.txt
 - - - - -
+git init
+cat > foo.txt
+git add foo.txt
+git commit -m "Works"
+git branch -m new

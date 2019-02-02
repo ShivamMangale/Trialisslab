@@ -1,0 +1,9 @@
+grep "ly\|rea\|self" hamlet.txt
+grep "^[^T]" hamlet.txt
+grep "s\|\?\|\-\|\," hamlet.txt
+grep "to" hamlet.txt | grep -v "the"
+- - - - -
+sed 's/[0-9][0-9][0-9][0-9] [0-9][0-9][0-9][0-9] [0-9][0-9]/#### #### ##/' card.txt > cardOut.txt
+- - - - -
+awk '{ sum =$1+$2+$3 ; sum=sum/3 ; if(sum>=80) print $1" "$2" "$3":A" ; else if(sum>=60) print $1" "$2" "$3":B"; else if(sum>=40) print $1" "$2" "$3":C"; else print $1" "$2" "$3":F"; } END { ; }' marks.txt
+- - - - -
